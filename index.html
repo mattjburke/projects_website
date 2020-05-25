@@ -25,8 +25,8 @@
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                 data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                 aria-label="Toggle navigation">Menu<i class="fas fa-bars"></i></button>
-        <a class="mx-2" href="https://www.linkedin.com/in/matthew-burke-8ab57775/"><i
-                class="fab fa-linkedin-in"></i></a><a class="mx-2" href="https://github.com/mattjburke"><i
+        <a class="mx-2" href="https://www.linkedin.com/in/matthew-burke-8ab57775/" target="_blank"><i
+                class="fab fa-linkedin-in"></i></a><a class="mx-2" href="https://github.com/mattjburke" target="_blank"><i
             class="fab fa-github"></i></a>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
@@ -66,7 +66,8 @@
     <div class="container">
         <h2 class="text-white mb-4">Projects</h2>
         <p class="text-white-50 mb-4">The majority of the projects listed below can also be found on my <a
-                href="https://github.com/mattjburke">github page</a>. However, some projects that I collaborated on are
+                href="https://github.com/mattjburke" target="_blank">github page</a>. However, some projects that I
+            collaborated on are
             hosted by a collaborator, and may not be maintained or have links to code repositories. Some of my earlier
             projects also do not have links to code repositories since the organization and readablity of the code is
             not representative of my current standard of quality. The github icon at the end of each project description
@@ -115,7 +116,18 @@
                         <div class="project-text w-100 my-auto text-center text-lg-left">
                             <h4 class="text-white">Stacked GANs for Learning Additional Features of Image Segmentation
                                 Maps</h4>
-                            <p class="mb-4 text-white-50">This project</p>
+                            <p class="mb-4 text-white-50">It has been shown that image segmentation models can be
+                                improved with an adversarial loss. Additionally, previous analysis of adversarial
+                                examples in image classification has shown that image datasets contain features that are
+                                not easily recognized by humans. This work investigates the effect of using a second
+                                adversarial loss to further improve image segmentation. The proposed model uses two
+                                generative adversarial networks stacked together, where the first generator takes an
+                                image as input and generates a segmentation map. The second generator then takes this
+                                predicted segmentation map as input and predicts the errors relative to the ground truth
+                                segmentation map. If these errors contained additional features that are not easily
+                                recognized by humans, they could possibly be learned by a discriminator. The proposed
+                                model did not consistently show significant improvement over a single generative
+                                adversarial model, casting doubt about the existence of such features.</p>
                             <p class="mb-2 text-white-50 font-weight-lighter">Python, PyTorch</p>
                             <!--                                    <p class="mb-0 text-white"><a class="my-10" ><i class="fab fa-python text-primary mb-10"></i><a/></p>-->
                             <a class="my-2" href="#!"><i class="fab fa-github"></i></a>
@@ -134,11 +146,15 @@
                         <div class="project-text w-100 my-auto text-center text-lg-right">
                             <h4 class="text-white">Coreference Resolution</h4>
                             <p class="mb-4 text-white-50">Winning submission for the Kingland Machine Learning
-                                Competition 2019 predicting coreference resolution. The 2-person of Marios Tsekitsidis
-                                and I won first place out of 49 student teams. Coreference resolution is is determining
-                                what proper noun a pronoun refers to (e.g. what entity ”it” or ”he” refers to).</p>
+                                Competition 2019 predicting coreference resolution. The 2-person team of Marios
+                                Tsekitsidis and I won first place out of 49 student teams. Coreference resolution is
+                                determining what proper noun a pronoun refers to (e.g. what entity ”it” or ”he” refers
+                                to). We adapted a state-of-the-art end-to-end model for use on the WikiCoref dataset. We
+                                also breifly explain the theory behind this model and the incremental improvements made
+                                to coreference models over the years that culminated in this model.</p>
                             <p class="mb-2 text-white-50 font-weight-lighter">Python, TensorFlow</p>
-                            <a class="my-2" href="#!"><i class="fab fa-github"></i></a>
+                            <a class="my-2" href="https://mattjburke.github.io/CorefChallenge/" target="_blank"><i
+                                    class="fab fa-github"></i></a>
                             <!--                                    <hr class="d-none d-lg-block mb-0 mr-0" />-->
                         </div>
                     </div>
@@ -153,8 +169,15 @@
                     <div class="d-flex h-100">
                         <div class="project-text w-100 my-auto text-center text-lg-left">
                             <h4 class="text-white">Kallisto RNA Sequence Quantification </h4>
-                            <p class="mb-4 text-white-50">A reimplemetation of the popular C++ RNA sequence
-                                quantification program, but written in C </p>
+                            <p class="mb-4 text-white-50">Two classmates and I reimplemented the main functions of the
+                                popular C++ RNA sequence
+                                quantification program <a
+                                        href="https://pachterlab.github.io/kallisto/about" target="_blank">kallisto</a>
+                                in C. RNA sequence quantification is an important tool for determining the functions of
+                                cells. Given a list of RNA sequences to quantify (transcripts), and a larger set of RNA
+                                sequences from a cell (reads), the goal is to quantify the relative abundance of each
+                                transcript in the reads. We tested our implementation using simulated RNA sequence data
+                                in the FASTA file format. </p>
                             <p class="mb-2 text-white-50 font-weight-lighter">C, FASTA files</p>
                             <!--                                    <p class="mb-0 text-white"><a class="my-10" ><i class="fab fa-python text-primary mb-10"></i><a/></p>-->
                             <!--                                    <hr class="d-none d-lg-block mb-0 ml-0" />-->
@@ -171,7 +194,7 @@
                 <div class="bg-black text-center h-100 project">
                     <div class="d-flex h-100">
                         <div class="project-text w-100 my-auto text-center text-lg-right">
-                            <h4 class="text-white">Genetic sequence alignment</h4>
+                            <h4 class="text-white">Multiple Sequence Alignment</h4>
                             <p class="mb-4 text-white-50">A demonstration of some dynamic programming algorithms to find
                                 the optimal multiple sequence alignment of several DNA sequences. </p>
                             <p class="mb-2 text-white-50 font-weight-lighter">Java</p>
@@ -191,7 +214,9 @@
                         <div class="project-text w-100 my-auto text-center text-lg-left">
 
                             <h4 class="text-white">Protein Structure Prediction</h4>
-                            <p class="mb-4 text-white-50">This project reimplemented a paper that used a ResNet
+                            <p class="mb-4 text-white-50">For this project I reimplemented a <a
+                                    href="https://www.nature.com/articles/s41598-019-40314-1" target="_blank">paper</a>
+                                that used a ResNet
                                 architecture for predicting protein distograms, and compared the effectiveness of using
                                 an Attention Augmented CNN for the same purpose. </p>
                             <p class="mb-2 text-white-50 font-weight-lighter">Python, PyTorch</p>
@@ -210,7 +235,8 @@
                     <div class="d-flex h-100">
                         <div class="project-text w-100 my-auto text-center text-lg-right">
                             <h4 class="text-white">Examining Proteins on Protein Data Base</h4>
-                            <p class="mb-4 text-white-50">A simple tutorial of some basic manipulations of pdb files</p>
+                            <p class="mb-4 text-white-50">A simple tutorial of some basic manipulations of pdb
+                                files.</p>
                             <p class="mb-2 text-white-50 font-weight-lighter">Python, pdb files</p>
                             <!--                                    <hr class="d-none d-lg-block mb-0 ml-0" />-->
                             <a class="my-2" href="#!"><i class="fab fa-github"></i></a>
@@ -240,7 +266,7 @@
         </div>
         <!-- Project Two Row-->
         <div class="row justify-content-center no-gutters">
-            <div class="col-lg-2"><img class="img-fluid" src="assets/img/binary_wave.jpg" alt=""/></div>
+            <div class="col-lg-2"><img class="img-fluid" src="assets/img/tu_darmstadt.png" alt=""/></div>
             <div class="col-lg-10 order-lg-first">
                 <div class="bg-black text-center h-100 project">
                     <div class="d-flex h-100">
@@ -251,7 +277,7 @@
                                 number of small networks with differing hyperparameters, and then used a performance
                                 scaling prediction algorithm to determine the optimal scaling of the hyperparameters.
                                 This work was done during the International Research Experience Program (IREP) at
-                                Technich Univeritat Darmstadt in Darmstatd, Germany.</p>
+                                Technische Univerität Darmstadt in Darmstatd, Germany.</p>
                             <p class="mb-2 text-white-50 font-weight-lighter">Python, TensorFlow</p>
                             <hr class="d-none d-lg-block mb-0 mr-0"/>
                             <!--                            <a class="my-2" href="#!"><i class="fab fa-github"></i></a>-->
@@ -268,8 +294,13 @@
                     <div class="d-flex h-100">
                         <div class="project-text w-100 my-auto text-center text-lg-left">
                             <h4 class="text-white">Stock Prediction Improvement with News Articles</h4>
-                            <p class="mb-4 text-white-50">Uses the sentiment of news articles in combination with time
-                                series data of the SNP 500 to predict future stock values. No longer maintained.</p>
+                            <p class="mb-4 text-white-50">In this class project with two other students, we created a
+                                model to predict if the S&P 500 index price would increase or decrease each day. Our
+                                model took typical time series analysis inputs such as the simple moving average, the
+                                exponential moving average, and high-low price differences, as well as the predicted
+                                sentiment of daily news articles related to the stock market. The sentiment of the
+                                articles was predicted using a naive bayes classifier, and did slightly improve the
+                                model's performance. </p>
                             <p class="mb-2 text-white-50 font-weight-lighter">Python, SciKit-Learn, Jupyter Notebook</p>
                             <!--                                    <a class="my-2" href="#!"><i class="fab fa-github"></i></a>-->
                             <hr class="d-none d-lg-block mb-0 ml-0"/>
@@ -286,8 +317,8 @@
                     <div class="d-flex h-100">
                         <div class="project-text w-100 my-auto text-center text-lg-right">
                             <h4 class="text-white">Checkers Agent</h4>
-                            <p class="mb-4 text-white-50">A checkers agent that uses alpha beta search to choose its
-                                moves against the user</p>
+                            <p class="mb-4 text-white-50">A checkers-playing agent that will play against a user. The
+                                agent uses alpha-besta search to determine the optimal move to make.</p>
                             <p class="mb-2 text-white-50 font-weight-lighter">Java</p>
                             <!--                                    <hr class="d-none d-lg-block mb-0 ml-0" />-->
                             <a class="my-2" href="#!"><i class="fab fa-github"></i></a>
@@ -298,17 +329,19 @@
         </div>
         <!-- Project One Row-->
         <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-            <div class="col-lg-2"><img class="img-fluid" src="assets/img/binary_wave.jpg" alt=""/></div>
+            <div class="col-lg-2"><img class="img-fluid" src="assets/img/American_Newspapers-stock.jpg" alt=""/></div>
             <div class="col-lg-10">
                 <div class="bg-black text-center h-100 project">
                     <div class="d-flex h-100">
                         <div class="project-text w-100 my-auto text-center text-lg-left">
                             <h4 class="text-white">Naive Bayes News Article Classification</h4>
-                            <p class="mb-4 text-white-50">Implemented a naive bayes classifier from scratch to classify
-                                news articles into 20 groups.</p>
+                            <p class="mb-4 text-white-50">This is an implementation of the naive bayes agorithm from
+                                scratch. The naive bayes model is used to classify news articles from the 20 Newsgroups
+                                dataset into 20 groups.</p>
                             <p class="mb-2 text-white-50 font-weight-lighter">Java</p>
                             <!--                                    <hr class="d-none d-lg-block mb-0 mr-0" />-->
-                            <a class="my-2" href="#!"><i class="fab fa-github"></i></a>
+                            <a class="my-2" href="https://github.com/mattjburke/Naive-Bayes-Classifier" target="_blank"><i
+                                    class="fab fa-github"></i></a>
                         </div>
                     </div>
                 </div>
@@ -322,12 +355,16 @@
                     <div class="d-flex h-100">
                         <div class="project-text w-100 my-auto text-center text-lg-right">
                             <h4 class="text-white">Ensemble Classifier</h4>
-                            <p class="mb-4 text-white-50">One of my very first machine learning projects. This
+                            <p class="mb-4 text-white-50">This was one of my very first machine learning projects. This
                                 classifier uses an ensemble of 7 simple Scikit-Learn classifiers to achieve a higher
-                                accuracy than any of the individual classifiers.</p>
+                                accuracy prediction than any of the individual classifiers. The 7 classifiers are a
+                                random forrest
+                                model, an ada-boost classifier, a multilayer perceptron, a k-nearest-neighbors model, a
+                                logistic regression model, a naive bayes model, and a decision tree. </p>
                             <p class="mb-2 text-white-50 font-weight-lighter">Python, SciKit-Learn</p>
                             <!--                                    <hr class="d-none d-lg-block mb-0 mr-0" />-->
-                            <a class="my-2" href="#!"><i class="fab fa-github"></i></a>
+                            <a class="my-2" href="https://github.com/mattjburke/ensemble-classifier-scikit-learn"
+                               target="_blank"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
                 </div>
@@ -335,7 +372,7 @@
         </div>
         <!-- Project One Row-->
         <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-            <div class="col-lg-2"><img class="img-fluid" src="assets/img/binary_wave.jpg" alt=""/></div>
+            <div class="col-lg-2"><img class="img-fluid" src="assets/img/android.png" alt=""/></div>
             <div class="col-lg-10">
                 <div class="bg-black text-center h-100 project">
                     <div class="d-flex h-100">
@@ -346,7 +383,8 @@
                                 share their location when they were at participating bars or restaurants, and receive
                                 special promotional deals for inviting freinds to the
                                 same location or for going out to particular venues a certain number of times per
-                                week.</p>
+                                week. Users' information was stored in an SQL database, and the app would access and
+                                update this information via a PHP script hosted on a server.</p>
                             <p class="mb-2 text-white-50 font-weight-lighter">Java, xml, SQL, PHP</p>
                             <hr class="d-none d-lg-block mb-0 ml-0"/>
                             <!--                            <a class="my-2" href="#!"><i class="fab fa-github"></i></a>-->
@@ -355,45 +393,10 @@
                 </div>
             </div>
         </div>
-
-        <!-- Project One Row-->
-        <!--        <div class="row justify-content-center no-gutters mb-5 mb-lg-0">-->
-        <!--            <div class="col-lg-2"><img class="img-fluid" src="assets/img/binary_wave.jpg" alt=""/></div>-->
-        <!--            <div class="col-lg-10">-->
-        <!--                <div class="bg-black text-center h-100 project">-->
-        <!--                    <div class="d-flex h-100">-->
-        <!--                        <div class="project-text w-100 my-auto text-center text-lg-left">-->
-        <!--                            <h4 class="text-white">Stacked generative adversarial networks for learning additional-->
-        <!--                                features of image segmentation maps</h4>-->
-        <!--                            <p class="mb-4 text-white-50"> It has been shown that image segmentation models can be-->
-        <!--                                improved with an adversarial loss. Additionally, previous analysis of adversarial-->
-        <!--                                examples in image classification has shown that image datasets contain features that are-->
-        <!--                                not easily recognized by humans. This work investigates the effect of using a second-->
-        <!--                                adversarial loss to further improve image segmentation. The proposed model uses two-->
-        <!--                                generative adversarial networks stacked together, where the first generator takes an-->
-        <!--                                image as input and generates a segmentation map. The second generator then takes this-->
-        <!--                                predicted segmentation map as input and predicts the errors relative to the ground truth-->
-        <!--                                segmentation map. If these errors contained additional features that are not easily-->
-        <!--                                recognized by humans, they could possibly be learned by a discriminator. The proposed-->
-        <!--                                model did not consistently show significant improvement over a single generative-->
-        <!--                                adversarial model, casting doubt about the existence of such features.</p>-->
-        <!--                            &lt;!&ndash;                                    <hr class="d-none d-lg-block mb-0 ml-0" />&ndash;&gt;-->
-        <!--                            <a class="my-2" href="#!"><i class="fab fa-github"></i></a>-->
-        <!--                        </div>-->
-        <!--                    </div>-->
-        <!--                </div>-->
-        <!--            </div>-->
-        <!--        </div>-->
-
-
         <!-- Project Two Row-->
     </div>
-    <div class="container">
-
-
-    </div>
-    <!-- /.container -->
 </section>
+
 <!-- Signup-->
 <!--        <section class="signup-section" id="signup">-->
 <!--            <div class="container">-->
@@ -417,7 +420,7 @@
                         <h4 class="text-uppercase m-0">GitHub</h4>
                         <hr class="my-4"/>
                         <!--                                <div class="small text-black-50">4923 Market Street, Orlando FL</div>-->
-                        <div class="small text-black-50"><a href="https://github.com/mattjburke">https://github.com/mattjburke</a>
+                        <div class="small text-black-50"><a href="https://github.com/mattjburke" target="_blank">https://github.com/mattjburke</a>
                         </div>
                     </div>
                 </div>
@@ -429,7 +432,7 @@
                         <h4 class="text-uppercase m-0">Email</h4>
                         <hr class="my-4"/>
                         <div class="small text-black-50"><a
-                                href="mailto:mattburke122@gmail.com">mattburke122@gmail.com</a></div>
+                                href="mailto:mattburke122@gmail.com" target="_blank">mattburke122@gmail.com</a></div>
                     </div>
                 </div>
             </div>
@@ -440,17 +443,20 @@
                         <h4 class="text-uppercase m-0">LinkedIn</h4>
                         <hr class="my-4"/>
                         <!--                                <div class="small text-black-50">https://www.linkedin.com/in/matthew-burke-8ab57775/</div>-->
-                        <div class="small text-black-50"><a href="https://www.linkedin.com/in/matthew-burke-8ab57775/">https://www.linkedin.com/in/matthew-burke-8ab57775/</a>
+                        <div class="small text-black-50"><a href="https://www.linkedin.com/in/matthew-burke-8ab57775/"
+                                                            target="_blank">https://www.linkedin.com/in/matthew-burke-8ab57775/</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!--                <div class="social d-flex justify-content-center">-->
-        <!--                    <a class="mx-2" href="https://www.linkedin.com/in/matthew-burke-8ab57775/"><i class="fab fa-linkedin-in"></i></a><a class="mx-2" href="https://github.com/mattjburke"><i class="fab fa-github"></i></a>-->
-
-        <!--                    <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a><a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a><a class="mx-2" href="#!"><i class="fab fa-github"></i></a>-->
-    </div>
+        <!--        <div class="social d-flex justify-content-center">-->
+        <!--            <a class="mx-2" href="https://www.linkedin.com/in/matthew-burke-8ab57775/"><i-->
+        <!--                    class="fab fa-linkedin-in"></i></a><a class="mx-2" href="https://github.com/mattjburke"><i-->
+        <!--                class="fab fa-github"></i></a>-->
+        <!--            <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a><a class="mx-2" href="#!"><i-->
+        <!--                class="fab fa-facebook-f"></i></a><a class="mx-2" href="#!"><i class="fab fa-github"></i></a>-->
+        <!--        </div>-->
     </div>
 </section>
 <!-- Footer-->
