@@ -87,20 +87,22 @@
         <!--                </div>-->
         <!-- Project Two Row-->
         <div class="row justify-content-center no-gutters">
-            <div class="col-lg-2 d-flex align-items-center"><img class="img-fluid" src="assets/img/binary_wave.jpg"
+            <div class="col-lg-2 d-flex align-items-center"><img class="img-fluid" src="assets/img/attn_simclr_diagram.png"
                                                                  alt=""/></div>
             <div class="col-lg-10 order-lg-first">
                 <div class="bg-black text-center h-100 project">
                     <div class="d-flex h-100">
                         <div class="project-text w-100 my-auto text-center text-lg-right">
-                            <h4 class="text-white">Object Removal Network (Ongoing)</h4>
-                            <p class="mb-4 text-white-50">This project removes objects from images in two steps. First,
-                                we use an unsupervised technique to produce image segmentations. We then use a variation
-                                of a generative adversarial network (GAN) to remove one segmentation category from the
-                                image and fill in the space with a realistic background. Our GAN variation is also
-                                unsupervised, so the entire process can be completed without needing any image
-                                segmentation maps or labels.</p>
-                            <p class="mb-2 text-white-50 font-weight-lighter">Python, PyTorch</p>
+                            <h4 class="text-white">Contrastive Learning with Attention (Ongoing)</h4>
+                            <p class="mb-4 text-white-50">Recent advances in self-supervised learning
+                                algorithms have utilized contrastive learning. One such method, SimCLR, applies a
+                                composition of augmentations to an image, and minimizes a contrastive loss between
+                                the two augmented images. This forthcoming paper improves upon SimCLR by applying an
+                                attention mask to a full image representation and a cropped image representation before
+                                the two representations are compared with a contrastive loss function. This mask allows
+                                the network to learn more distinct features of images, creating representations that
+                                are more clearly clustered. </p>
+                            <p class="mb-2 text-white-50 font-weight-lighter">Python, TensorFlow</p>
                             <hr class="d-none d-lg-block mb-0 mr-0"/>
                             <!--                            <a class="my-2" href="#!"><i class="fab fa-github"></i></a>-->
                         </div>
